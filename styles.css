@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+  /* Primary Colors */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* Gradients */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 18px;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* Main Container Styles */
+main {
+  max-width: 1440px;
+}
+
+/* Flex Container Styles */
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 800px;
+  height: 650px;
+  margin: 50px auto;
+}
+
+.flex-container .item {
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Item 1 Styles */
+.flex-container .item-1 {
+  background-color: #503af5;
+  border-radius: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-container .item-1 h2,
+.flex-container .item-1 h3 {
+  color: var(--light-lavender);
+  font-size: 32px;
+  line-height: 1.5;
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin-bottom: 20px;
+}
+
+.flex-container .item-1 h3 {
+  color: var(--white);
+  margin-top: 30px;
+}
+
+/* Item 1 Circle Styles */
+.item-1 .circle {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  background-color: var(--persian-blue);
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px hsla(241, 71%, 34%, 0.5);
+}
+
+.item-1 .circle p {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  font-size: 92px;
+  line-height: 1.5;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 800;
+}
+
+.item-1 .circle .percentage {
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--light-lavender);
+  line-height: 1.5;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.item-1 .info {
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--light-lavender);
+}
+
+/* Item 2 Styles */
+.flex-container .item-2 {
+  background-color: var(--white);
+  border-bottom-right-radius: 20px;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px rgba(172, 163, 163, 0.5); /* Right and bottom shadow */
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.item-2 .right-side-primary-text {
+  color: black;
+  font-size: 28px;
+  line-height: 1.5;
+  margin-left: 50px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.item-2 .flex-items {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* Align the SVG and the span within .inner-flex */
+.item-2 .inner-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Adjust as needed */
+  padding: 10px;
+}
+
+/* Adjust the spacing between the SVG and the span */
+.item-2 .inner-flex svg {
+  margin-right: 10px;
+}
+
+.item-2 .flex-items .inner-flex span {
+  font-size: 16px;
+}
+.inner-flex .flex-inner-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-2 .flex-items .item--1 {
+  width: 350px;
+  padding: 10px;
+  background-color: #fff6f5;
+}
+.item-2 .flex-items .item--2 {
+  width: 350px;
+  padding: 10px;
+  background-color: #fffbf2;
+}
+.item-2 .flex-items .item--3 {
+  width: 350px;
+  padding: 10px;
+  background-color: #f2fbfa;
+}
+.item-2 .flex-items .item--4 {
+  width: 350px;
+  padding: 10px;
+  background-color: #f2fbfa;
+}
+.btn {
+  width: 100%;
+  border: none;
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+  padding: 15px 15px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--violet-blue);
+}
+
+@media (max-width: 837px) {
+  body {
+    margin: 100px auto;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media (max-width: 626px) {
+  .flex-container {
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+  }
+  .item-2 .flex-items .item--1 {
+    width: 250px;
+  }
+  .item-2 .flex-items .item--2 {
+    width: 250px;
+  }
+  .item-2 .flex-items .item--3 {
+    width: 250px;
+  }
+  .item-2 .flex-items .item--4 {
+    width: 250px;
+  }
+}
+@media (max-width: 430px) {
+  .flex-container {
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+  }
+  .item-2 .flex-items .item--1 {
+    width: 200px;
+  }
+  .item-2 .flex-items .item--2 {
+    width: 200px;
+  }
+  .item-2 .flex-items .item--3 {
+    width: 200px;
+  }
+  .item-2 .flex-items .item--4 {
+    width: 200px;
+  }
+  .item-1 .circle {
+    width: auto;
+  }
+  .item-1 .info {
+    width: auto;
+  }
+}
